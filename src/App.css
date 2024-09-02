@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.backgroundImage {
+  background-image: url('./assets/homeBg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.linehight {
+  line-height: 44px;
+}
+
+.grid__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  justify-content: center;
+}
+
+@media(max-width:900px) {
+  .hide {
+    display: none !important;
+
+  }
+}
+
+.whyimg {
+  background-image: url('./assets/modal1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+.custom-bg {
+  background-color: rgba(0, 0, 0, 0.73);
+}
+
+.startd {
+  justify-self: flex-start;
+}
