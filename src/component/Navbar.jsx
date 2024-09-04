@@ -1,6 +1,7 @@
 import { MenuIcon, X } from 'lucide-react';
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import logo from '../assets/logo.jpg'
 
 const Routs = [
     {
@@ -59,9 +60,18 @@ const Navbar = () => {
                         className='md:hidden dark:text-neutral-50'
                     >{togle ? <X /> : <MenuIcon />}</button>
 
-                    <Link to='/'><h2 className='font text-gray-900 dark:text-neutral-50 font-semibold tracking-wider text-2xl leading-7'>
-                        <span className='font-bold text-red-500 tracking-tight text-3xl'>Cad</span>deshk
-                    </h2></Link>
+                    <Link to='/'>
+                        {/* <h2 className='font text-gray-900 dark:text-neutral-50 font-semibold tracking-wider text-2xl leading-7'>
+                            <span className='font-bold text-red-500 tracking-tight text-3xl'>Cad</span>
+                            deshk
+                        </h2> */}
+
+                        <img
+                            src={logo}
+                            alt="Logo"
+                            className='w-20 rounded-md border-gray-400 border-2'
+                        />
+                    </Link>
                 </div>
                 <div className=' hidden md:flex space-x-8 hide '>
                     {Routs.map((item, index) => (
