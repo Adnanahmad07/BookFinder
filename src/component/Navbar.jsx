@@ -2,6 +2,7 @@ import { MenuIcon, X } from 'lucide-react';
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import logo from '../assets/logo.jpg'
+import { motion } from 'framer-motion';
 
 const Routs = [
     {
@@ -45,9 +46,22 @@ const Navbar = () => {
     return (
         <>
             {togle && (
-                <div className='md:hidden bg-red-50 h-full w-5/6 fixed'>
+                <motion.div
+                    initial={{ x: '100%' }}
+                    animate={{ x: '0%' }}
+                    transition={{ duration: 0.5, ease: 'easeInOut' }}
+                    className='md:hidden bg-red-50 dark:bg-gray-950 dark:text-neutral-300 h-full w-5/6 fixed z-20 pt-28'
+                >
+                    {Routs.map((item, index) => (
+                        <div
+                            key={index}
+                            className='text-center font-bold border-b border-gray-200 py-5'
+                        >
+                            <Link to={item.NavLink}>{item.Name}</Link>
+                        </div>
+                    ))}
+                </motion.div>
 
-                </div>
 
             )}
 
@@ -55,17 +69,33 @@ const Navbar = () => {
 
             <div className='fixed top-0 z-20 w-full flex justify-between items-center mx-auto py-4 px-4 bg-red-50 dark:bg-custom-gradient-black xl:px-12'>
                 <div className='flex justify-center items-center gap-x-4 '>
-                    <button
+                    <motion.button
                         onClick={setTogleMenu}
                         className='md:hidden dark:text-neutral-50'
-                    >{togle ? <X /> : <MenuIcon />}</button>
+                        initial={{ rotate: 0 }}
+                        animate={{ rotate: togle ? 45 : 0 }}
+                        transition={{ duration: 0.3, ease: 'easeInOut' }}
+                    >
+                        {togle ? (
+                            <motion.div
+                                initial={{ rotate: 0 }}
+                                animate={{ rotate: 45 }}
+                                transition={{ duration: 0.3 }}
+                            >
+                                <X />
+                            </motion.div>
+                        ) : (
+                            <motion.div
+                                initial={{ rotate: 0 }}
+                                animate={{ rotate: 0 }}
+                                transition={{ duration: 0.3 }}
+                            >
+                                <MenuIcon />
+                            </motion.div>
+                        )}
+                    </motion.button>
 
                     <Link to='/'>
-                        {/* <h2 className='font text-gray-900 dark:text-neutral-50 font-semibold tracking-wider text-2xl leading-7'>
-                            <span className='font-bold text-red-500 tracking-tight text-3xl'>Cad</span>
-                            deshk
-                        </h2> */}
-
                         <img
                             src={logo}
                             alt="Logo"
