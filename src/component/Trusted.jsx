@@ -7,46 +7,46 @@ import { Link } from 'react-router-dom'
 const topCourseData = [
     {
         Name: "AutoCAD Architecture",
-        Details: "training that focus on teaching individuals how to use Autodesk 3ds Max, which is a professional 3D computer graphics software used in various industries such as architecture, design, gaming, and film production. The training aims to equip students or professionals with the skills and knowledge needed to create 3D models, animations, and visualizations using the software.3dsmax skills are in great demand and there are plenty of job opportunities available in Hyderabad for freshers. The right training and the right guidance will help you launch your career in 3dsmax sooner and will give you the right beginning.Caddesk Ameerpet Offers 3dsmax training with expert trainers. 3dsmax course curriculum is designed as per industry trends. Join Our 3dsmax course program and start your career in industry. At caddesk ameerpet Hyderabad you get training and placements at one place. At Caddesk We help individual students to help in creating their portfolios",
+        Details: "AutoCAD is a software application for 2D and 3D computer-aided design (CAD) and drafting. Available since 1982 as a desktop application and since 2010 as a mobile, web- and cloud-based app, AutoCAD is used across a wide range of industries, by architects, project managers, engineers, graphic designers, city planners, and other professionals.",
         Imagesr: demoimage1,
         betch: "New"
 
 
     },
     {
-        Name: "AutoCAD Architecture",
-        Details: "training that focus on teaching individuals how to use Autodesk 3ds Max, which is a professional 3D computer graphics software used in various industries such as architecture, design, gaming, and film production. The training aims to equip students or professionals with the skills and knowledge needed to create 3D models, animations, and visualizations using the software.3dsmax skills are in great demand and there are plenty of job opportunities available in Hyderabad for freshers. The right training and the right guidance will help you launch your career in 3dsmax sooner and will give you the right beginning.Caddesk Ameerpet Offers 3dsmax training with expert trainers. 3dsmax course curriculum is designed as per industry trends. Join Our 3dsmax course program and start your career in industry. At caddesk ameerpet Hyderabad you get training and placements at one place. At Caddesk We help individual students to help in creating their portfolios",
+        Name: "ETABS Architecture",
+        Details: "ETABS is an engineering software product that caters to multi-story building analysis and design. Modeling tools and templates, code-based load prescriptions, analysis methods, and solution techniques are all coordinated with the grid-like geometry unique to this class of structure.",
         Imagesr: demoimage1,
         betch: "top rated"
 
     },
     {
-        Name: "AutoCAD Architecture",
-        Details: "training that focus on teaching individuals how to use Autodesk 3ds Max, which is a professional 3D computer graphics software used in various industries such as architecture, design, gaming, and film production. The training aims to equip students or professionals with the skills and knowledge needed to create 3D models, animations, and visualizations using the software.3dsmax skills are in great demand and there are plenty of job opportunities available in Hyderabad for freshers. The right training and the right guidance will help you launch your career in 3dsmax sooner and will give you the right beginning.Caddesk Ameerpet Offers 3dsmax training with expert trainers. 3dsmax course curriculum is designed as per industry trends. Join Our 3dsmax course program and start your career in industry. At caddesk ameerpet Hyderabad you get training and placements at one place. At Caddesk We help individual students to help in creating their portfolios",
+        Name: "Revit Architecture",
+        Details: "Revit Architecture is a building information modeling software for architects, landscape architects, structural engineers, MEP engineers, designers, and contractors. It allows users to design a building and structure and its components in 3D, annotate the model with 2D drafting elements, and access building information from the building model's database.",
         Imagesr: demoimage1,
         betch: "Most loved"
 
 
     },
     {
-        Name: "AutoCAD Architecture",
-        Details: "training that focus on teaching individuals how to use Autodesk 3ds Max, which is a professional 3D computer graphics software used in various industries such as architecture, design, gaming, and film production. The training aims to equip students or professionals with the skills and knowledge needed to create 3D models, animations, and visualizations using the software.3dsmax skills are in great demand and there are plenty of job opportunities available in Hyderabad for freshers. The right training and the right guidance will help you launch your career in 3dsmax sooner and will give you the right beginning.Caddesk Ameerpet Offers 3dsmax training with expert trainers. 3dsmax course curriculum is designed as per industry trends. Join Our 3dsmax course program and start your career in industry. At caddesk ameerpet Hyderabad you get training and placements at one place. At Caddesk We help individual students to help in creating their portfolios",
+        Name: "3DS MAX",
+        Details: "3DS Max is a professional 3D computer graphics program for making 3D animations, models, games, and images. It is often used in the video game industry for creating visual effects for movies and television, and for architectural visualization.",
         Imagesr: demoimage1,
         betch: "New"
 
 
     },
     {
-        Name: "AutoCAD Architecture",
-        Details: "training that focus on teaching individuals how to use Autodesk 3ds Max, which is a professional 3D computer graphics software used in various industries such as architecture, design, gaming, and film production. The training aims to equip students or professionals with the skills and knowledge needed to create 3D models, animations, and visualizations using the software.3dsmax skills are in great demand and there are plenty of job opportunities available in Hyderabad for freshers. The right training and the right guidance will help you launch your career in 3dsmax sooner and will give you the right beginning.Caddesk Ameerpet Offers 3dsmax training with expert trainers. 3dsmax course curriculum is designed as per industry trends. Join Our 3dsmax course program and start your career in industry. At caddesk ameerpet Hyderabad you get training and placements at one place. At Caddesk We help individual students to help in creating their portfolios",
+        Name: "Civil 3D Architecture",
+        Details: "Civil 3D from Autodesk supports BIM for civil engineering design and documentation for rail, roads, land development, airports, water, and civil structures. Civil 3D helps professionals better understand project performance, maintain more consistent data and processes, and respond faster to changes.",
         Imagesr: demoimage1,
         betch: "New"
 
 
     },
     {
-        Name: "AutoCAD Architecture",
-        Details: "training that focus on teaching individuals how to use Autodesk 3ds Max, which is a professional 3D computer graphics software used in various industries such as architecture, design, gaming, and film production. The training aims to equip students or professionals with the skills and knowledge needed to create 3D models, animations, and visualizations using the software.3dsmax skills are in great demand and there are plenty of job opportunities available in Hyderabad for freshers. The right training and the right guidance will help you launch your career in 3dsmax sooner and will give you the right beginning.Caddesk Ameerpet Offers 3dsmax training with expert trainers. 3dsmax course curriculum is designed as per industry trends. Join Our 3dsmax course program and start your career in industry. At caddesk ameerpet Hyderabad you get training and placements at one place. At Caddesk We help individual students to help in creating their portfolios",
+        Name: "MX Road",
+        Details: "MX Road is an advanced string-based modeling tool that enables the rapid and accurate design of all types of roads. It is widely used for designing, drafting, and analysis by civil engineers and planners for highway planning.",
         Imagesr: demoimage1,
         betch: "New"
 

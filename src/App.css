@@ -45,3 +45,7 @@ body {
 .startd {
   justify-self: flex-start;
 }
+
+.arrow:hover .showe {
+  display: block;
+}
