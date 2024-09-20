@@ -19,21 +19,21 @@ const Located = () => {
                     <div className='w-52 flex justify-center items-center font-extrabolds'><FaLocationPin size={65} className=' p-3 rounded-full bg-red-600 text-white' /></div>
                     <div className='w-full  p-3'>
                         <h6 className='font-bold md:text-2xl text-xl'>Location Address :</h6>
-                        <p className='font-normal text-sm my-3'>KVR Enclave, Flat.No.A3 3RD Floor, beside Satyam Theatre Road, above Bata Showroom, Ameerpet, Hyderabad, Telangana 500016</p>
+                        <p className='font-normal text-sm my-3'>In front of Govenment Polytechnic College Gate, Gadge Nagar, Amravati, Maharashtra 444602</p>
                     </div>
                 </div>
                 <div className='w-1/2  h-40 p-1'>
                     <div className=' w-[100%] bg-slate-100 drop-shadow-xl shadow-inner dark:bg-slate-900 h-full mx-auto card text-center pb-2'>
                         <div className='w-full my-3 flex justify-center items-center font-extrabolds'><MdEmail size={65} className='border p-3 rounded-full bg-red-600 text-white' /></div>
                         <h2 className='font-bold md:text-xl text-md'>Phone Numbers :</h2>
-                        <p className='font-normal text-sm'>1423353546646</p>
+                        <p className='font-normal text-sm'>  8180834389 | 8087212653</p>
                     </div>
                 </div>
                 <div className='w-1/2  h-40 p-1'>
                     <div className=' w-[100%] bg-slate-100 drop-shadow-xl shadow-inner dark:bg-slate-900 h-full mx-auto card text-center pb-2'>
                         <div className='w-full my-3 flex justify-center items-center font-extrabolds'><PhoneCall size={65} className='border p-3 rounded-full bg-red-600 text-white' /></div>
                         <h2 className='font-bold md:text-xl text-md'>Email Address :</h2>
-                        <p className='font-normal md:text-sm text-[12px] '>Info@caddeskhyderabad.com</p>
+                        <p className='font-normal md:text-sm text-[12px] '>Info@caddeskamravati.com</p>
                     </div>
                 </div>
             </div>

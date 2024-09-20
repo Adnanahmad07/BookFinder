@@ -10,7 +10,7 @@ const Contact = () => {
             <div className='w-full text-center my-12'>
                 <span className='font-light md:ext-2xl text-xl tracking-wider dark:text-neutral-50'>
                     Contact Us</span>
-                <h3 className='md:text-4xl text-2xl font-bold text-gray-700 dark:text-gray-200 mb-4'>Connect with us today at Treenig Institute to unlock your potential</h3>
+                <h3 className='md:text-4xl text-2xl font-bold text-gray-700 dark:text-gray-200 mb-4'>Connect with us today at Training Institute to unlock your potential</h3>
                 <div className='w-full '>
                     <p className='h-1 w-60 bg-red-500 rounded-2xl mx-auto'></p>
                 </div>

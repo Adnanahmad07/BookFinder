@@ -1,12 +1,14 @@
 import React from 'react';
 import { FaRocket, FaLightbulb, FaCogs, FaUsers } from 'react-icons/fa';
+import topBackground from '../assets/intrudusing_cleanup.jpg'
+
 
 const About = () => {
     return (
         <div className="min-h-screen p-4 bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
             {/* Top Section */}
             <div className="text-center">
-                <img src="https://via.placeholder.com/800x400" alt="About Us" className="mx-auto w-full h-64 object-cover" />
+                <img src={topBackground} alt="About Us" className="mx-auto w-full h-80 object-cover" />
                 <h1 className="text-4xl font-bold mt-4">About Us</h1>
                 <p className="text-lg mt-2">We strive to deliver the best education and services to our students.</p>
             </div>
@@ -48,7 +50,7 @@ const About = () => {
                     {/* CEO Image */}
                     <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
                         <img src="https://via.placeholder.com/400" alt="CEO" className="mx-auto rounded-full" />
-                        <h3 className="text-xl font-semibold mt-4 text-center">John Doe</h3>
+                        <h3 className="text-xl font-semibold mt-4 text-center">Kunal Joshi</h3>
                         <p className="text-center mt-2">CEO & Founder</p>
                         <p className="text-center mt-2">Leading the institute with a vision for excellence.</p>
                     </div>
@@ -65,6 +67,11 @@ const About = () => {
                             <p className="text-center">Lead Developer</p>
                         </div>
                     </div>
+
+                </div>
+                <div className='my-4 md:px-12 px-4'>
+                    <h2 className='my-3 font-bold text-2xl'>ABOUT COMPANY</h2>
+                    <p className='text-md  '>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ipsum voluptatibus sequi deleniti id, repellat a distinctio pariatur labore placeat aperiam eveniet alias atque, harum, minus similique beatae iste eius? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque qui omnis quod sint eos possimus maiores delectus autem quas culpa explicabo, fuga est ad id, voluptatibus illo nam tempore repellendus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsa hic aspernatur modi illo dolore dolorem dolor unde porro.</p>
                 </div>
             </div>
         </div>
