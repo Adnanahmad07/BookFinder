@@ -40,10 +40,12 @@ const Opanform = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://27kisanagro.com/cadcontact.php', formData);
-            console.log('Form submitted successfully:', response.data);
+            const response = await axios.post('/api/cadcontact.php', formData);
+            window.alert('Form submitted successfully!');
+            closeForm();  // Close the form after successful submission
         } catch (error) {
-            console.error('Error submitting the form:', error);
+            window.alert('Error submitting the form. Please try again.');
+            closeForm();  // Close the form even if there's an error
         }
     };
 
