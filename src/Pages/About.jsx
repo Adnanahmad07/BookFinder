@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaRocket, FaLightbulb, FaCogs, FaUsers } from 'react-icons/fa';
-import topBackground from '../assets/intrudusing_cleanup.jpg'
+import topBackground from '../assets/aobut2.png'
+import Ceo from "../assets/Ceo.jpg"
 
 
 const About = () => {
@@ -8,9 +9,10 @@ const About = () => {
         <div className="min-h-screen p-4 bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
             {/* Top Section */}
             <div className="text-center">
-                <img src={topBackground} alt="About Us" className="mx-auto w-full h-80 object-cover" />
+                <img src={topBackground} alt="About Us" className="mx-auto w-[300px] object-cover" />
                 <h1 className="text-4xl font-bold mt-4">About Us</h1>
-                <p className="text-lg mt-2">We strive to deliver the best education and services to our students.</p>
+                <p className="text-lg mt-2">CADLINK provides professional software training on a vast array of courses in the fields of CAD, CAM and CAE. Since its founding in 2019, CADLINK has provided training to over thousand of students.
+                    Since its inception, in a very short span of time itself, with the qualitative services of training and well-designed training modules.</p>
             </div>
 
             {/* CEO Section */}
@@ -45,17 +47,17 @@ const About = () => {
 
             {/* Team Section */}
             <div className="mt-16">
-                <h2 className="text-3xl font-semibold text-center">Our Team</h2>
+                {/* <h2 className="text-3xl font-semibold text-center">Our Team</h2> */}
                 <div className="mt-10 flex flex-wrap justify-center">
                     {/* CEO Image */}
                     <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
-                        <img src="https://via.placeholder.com/400" alt="CEO" className="mx-auto rounded-full" />
-                        <h3 className="text-xl font-semibold mt-4 text-center">Kunal Joshi</h3>
+                        <img src={Ceo} alt="CEO" className="mx-auto rounded-full" />
+                        <h3 className="text-xl font-semibold mt-4 text-center">Er. Kunal Joshi</h3>
                         <p className="text-center mt-2">CEO & Founder</p>
                         <p className="text-center mt-2">Leading the institute with a vision for excellence.</p>
                     </div>
                     {/* Other Team Members */}
-                    <div className="w-full sm:w-1/2 lg:w-1/3 p-4 flex flex-col sm:flex-row">
+                    {/* <div className="w-full sm:w-1/2 lg:w-1/3 p-4 flex flex-col sm:flex-row">
                         <div className="w-full sm:w-1/2 p-2">
                             <img src="https://via.placeholder.com/200" alt="Team Member 1" className="rounded-full mx-auto" />
                             <h3 className="text-lg font-semibold mt-4 text-center">Jane Smith</h3>
@@ -66,12 +68,18 @@ const About = () => {
                             <h3 className="text-lg font-semibold mt-4 text-center">Robert Brown</h3>
                             <p className="text-center">Lead Developer</p>
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
                 <div className='my-4 md:px-12 px-4'>
                     <h2 className='my-3 font-bold text-2xl'>ABOUT COMPANY</h2>
-                    <p className='text-md  '>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ipsum voluptatibus sequi deleniti id, repellat a distinctio pariatur labore placeat aperiam eveniet alias atque, harum, minus similique beatae iste eius? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque qui omnis quod sint eos possimus maiores delectus autem quas culpa explicabo, fuga est ad id, voluptatibus illo nam tempore repellendus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsa hic aspernatur modi illo dolore dolorem dolor unde porro.</p>
+                    <p class="text-lg leading-relaxed">
+                        Welcome to <span class="font-semibold">CadLink</span>, the premier training institute located in <span class="font-semibold">Gadge Nagar, Amravati</span>. Under the leadership of our CEO, <span class="font-semibold">Er. Kunal Joshi </span>, we are dedicated to providing top-notch training in a wide range of design and engineering software. Our mission is to equip students and professionals alike with the skills needed to excel in fields like civil, mechanical and elactrical engineering.
+                    </p>
+                    <p class="text-lg leading-relaxed mt-4">
+                        At CadLink, we offer comprehensive courses in software such as AutoCAD, Revit Architecture, 3DS MAX, Civil 3D, SCADA, SketchUp, Catia, Creo, Ansys WB, SolidWorks, NX CAD, Revit MEP, V-ray, and Photoshop. Our state-of-the-art facilities and expert instructors ensure a practical and innovative learning experience that prepares you for success in today's competitive job market. Join us today to unlock your full potential and take the next step in your career.
+                    </p>
+
                 </div>
             </div>
         </div>

@@ -104,7 +104,7 @@ const Form = () => {
                         <option value="civil-cad">Civil CAD</option>
                         <option value="mechanical-cad">Mechanical CAD</option>
                         <option value="electrical-cad">Electrical CAD</option>
-                        <option value="project-management">Project Management</option>
+
                         <option value="architecture-cad">Architecture CAD</option>
                         <option value="interior-design">Interior Design</option>
                     </select>

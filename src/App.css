@@ -3,14 +3,47 @@ body {
   padding: 0;
 }
 
-.backgroundImage {
-  background-image: url('./assets/homeBg.jpg');
-  background-position: center;
+/* .backgroundImage {
+  background-image: url('./assets/frontimage.jpg');
+  background-position: top;
   background-repeat: no-repeat;
-  height: 100%;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+} */
+
+
+.backgroundImage {
+  position: relative;
+
+  background-image: url('./assets/frontimage.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 100vh;
   width: 100%;
   background-size: cover;
 }
+
+.backgroundImage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.backgroundImage>* {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+
+
 
 .linehight {
   line-height: 44px;

@@ -1,68 +1,65 @@
-import React, { useState } from 'react'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
-import image1 from '../assets/member-3.png'
-import image2 from '../assets/member-4.png'
-import image3 from '../assets/member-5.png'
-
-
-import image7 from '../assets/member-8.png'
+import React, { useState } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import image1 from '../assets/member-3.png';
+import image2 from '../assets/member-4.png';
+import image3 from '../assets/member-5.png';
+import image7 from '../assets/member-8.png';
+import image4 from '../assets/member-7.png'
 
 const reviews = [
     {
-        name: "John Doe",
+        name: "Rahul Sharma",
         demoImg: image1,
-        review: "Great product! I love using it every day."
+        course: "AutoCAD",
+        review: "CadLink's AutoCAD course gave me hands-on experience that significantly improved my technical skills. The instructors are very supportive!",
     },
     {
-        name: "Jane Smith",
-        demoImg: image1,
-        review: "Excellent service and fast delivery. Highly recommended!"
+        name: "Sneha Patil",
+        demoImg: image4,
+        course: "Photoshop",
+        review: "The Photoshop course at CadLink helped me build a strong foundation. The projects were practical and helped me create a stunning portfolio.",
     },
     {
-        name: "Mike Johnson",
-        demoImg: image1,
-        review: "The quality exceeded my expectations. Will buy again."
+        name: "Rohan Deshmukh",
+        demoImg: image3,
+        course: "Revit Architecture",
+        review: "Revit Architecture training was top-notch. I feel confident in using the software professionally thanks to the detailed guidance from the trainers.",
     },
     {
-        name: "Emily Brown",
-        demoImg: image1,
-        review: "User-friendly and efficient. Saved me a lot of time."
+        name: "Priya Nair",
+        demoImg: image7,
+        course: "3DS MAX",
+        review: "CadLink's 3DS MAX course was detailed and interactive. The instructors ensured we understood every concept thoroughly, making the learning process easy.",
     },
-    {
-        name: "Chris Wilson",
-        demoImg: image1,
-        review: "Impressive features and great value for money."
-    },
-    {
-        name: "Sarah Lee",
-        demoImg: image1,
-        review: "Customer support was outstanding. Thank you!"
-    }
-]
+
+];
 
 export default function ReviewSlider() {
-    const [currentIndex, setCurrentIndex] = useState(0)
+    const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextReview = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length)
-    }
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length);
+    };
 
     const prevReview = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + reviews.length) % reviews.length)
-    }
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + reviews.length) % reviews.length);
+    };
 
-    const currentReview = reviews[currentIndex]
+    const currentReview = reviews[currentIndex];
 
     return (
         <div className="md:w-full w-[380px] max-w-3xl mx-auto p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md drop-shadow-md">
-            <div className="flex flex-col items-center mb-8 ">
+            <div className="flex flex-col items-center mb-8">
                 <img
                     src={currentReview.demoImg}
                     alt={currentReview.name}
                     className="w-24 h-24 rounded-full mb-4"
                 />
-                <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2 ">{currentReview.name}</h2>
-                <p className="text-gray-600 dark:text-gray-300 text-center">{currentReview.review}</p>
+                <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">{currentReview.name}</h2>
+                <p className="text-gray-500 dark:text-gray-400">
+                    Course: <span className="text-blue-500 dark:text-blue-400">{currentReview.course}</span>
+                </p>
+                <p className="text-gray-600 dark:text-gray-300 text-center mt-2">{currentReview.review}</p>
             </div>
             <div className="flex justify-center space-x-4">
                 <button
@@ -81,5 +78,5 @@ export default function ReviewSlider() {
                 </button>
             </div>
         </div>
-    )
+    );
 }

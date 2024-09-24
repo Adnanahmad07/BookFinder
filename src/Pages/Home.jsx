@@ -1,11 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import Homeslider from '../component/Homeslider.jsx'
 import Category from '../component/Category.jsx'
 import Trusted from '../component/Trusted.jsx'
 import WhyHome from '../component/WhyHome.jsx'
 import ReviewSlider from '../component/ReviewSlider.jsx'
 import Iso from '../assets/pngwing.com.png'
+import Msme from '../assets/Msme.jpg'
 import background from '../assets/homeBg.jpg';
 import modal from '../assets/modal.png'
 
@@ -20,9 +22,10 @@ const Home = () => {
                 <div
                     className='text-white dark:text-neutral-400 flex-1
                 '>
-                    <p className='text-md my-2'>IMIE Certified</p>
-                    <h1 className='xl:text-5xl text-3xl mb-6 font-bold tracking-wider linehight'>Best <span className='font-extrabold text-red-500'>CAD</span> Training Institute In Gadge Nagar, Amravati</h1>
-                    <p className='md:min-w-96 text-md mb-8 '>CAD Gadge Nagar Amravati Is The Best cad Training Institutes in Amravati Which Offers various Courses In Civil CAD, Mechanical CAD, Electrical CAD, Architecture CAD, Interior Designing, BIM course In Amravati. Build Your Career In The CAD Join Caddesk.Our best infrastructure resources and experienced instructors make you the premier choice for anyone looking to elevate their skills in this field. You won’t find a more competent organization to help you reach your full potential in CAD. Trust us, if you want to become an expert in this field, Caddesk Amravati is the place to start. Don’t hesitate to sign up for free demo and unlock your fullest potential today!</p>
+
+                    <h1 className='xl:text-5xl text-3xl mb-6 font-bold tracking-wider linehight'>The Best <span className='font-extrabold text-red-500'>CAD</span> Training Institute In <br /> Gadge Nagar, Amravati</h1>
+                    <p className='md:min-w-96 text-md mb-8 max-w-[550px]'>Welcome to CadLink – Amravati's Leading Training Institute
+                        Located at Gadge Nagar, Amravati, CadLink is the premier destination for mastering in CAD/CAM/CAE. With top-tier instructors, cutting-edge facilities, and a commitment to excellence. CadLink is your gateway to a successful career in design and technology. Elevate your skills with industry-leading courses and unlock your potential today!</p>
                     <div className='flex flex-nowrap'>
 
 
@@ -35,12 +38,18 @@ const Home = () => {
 
                     </div>
 
-                    <div className='  my-10 inline-block'>
+                    <div className='  my-10 flex gap-x-5'>
                         <img
                             src={Iso}
                             alt="Iso certified"
                             className='w-24'
                         />
+                        <img
+                            src={Msme}
+                            alt="Iso certified"
+                            className='w-24 rounded-full'
+                        />
+
 
                     </div>
                 </div>
@@ -51,10 +60,11 @@ const Home = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7 }}
                 >
-                    <img src={modal} alt="modal" className='md:max-w-[500px] w-full' />
+                    {/* <img src={modal} alt="modal" className='md:max-w-[500px] w-full' /> */}
                 </motion.div>
             </div>
 
+            <Homeslider />
             <Category />
             <Trusted />
             <WhyHome />

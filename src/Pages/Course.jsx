@@ -2,6 +2,7 @@ import { BookA, Clock } from 'lucide-react';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import autocadmech from '../assets/autocadmech.jpg'
+import AutoEls from '../assets/AUTOCADELECTRICAL.jpeg'
 import SCADA from '../assets/scada.png'
 import SKETCHUP from "../assets/SKETCHUP.jpg"
 import Catia from '../assets/catiamodellingsoftware.jpg'
@@ -15,6 +16,10 @@ import vray from '../assets/vray.jpg'
 import Mas from '../assets/3dsmax.jpg'
 import photoshop from '../assets/photoshop.jpg'
 import revitmep from '../assets/RevitMEP.jpg'
+import lumion1 from '../assets/lumion1.jpg'
+import Plc from '../assets/plc.jpg'
+
+
 
 
 const courses = [
@@ -22,9 +27,25 @@ const courses = [
         id: 1,
         day: "30",
         parday: "03",
-        title: "AutoCAD",
+        title: "AutoCAD Mechanical",
         image: autocadmech,
         description: "AutoCAD is a software application for 2D and 3D computer-aided design (CAD) and drafting. Available since 1982 as a desktop application and since 2010 as a mobile, web- and cloud-based app, AutoCAD is used across a wide range of industries, by architects, project managers, engineers, graphic designers, city planners, and other professionals.",
+    },
+    {
+        id: 2,
+        day: "30",
+        parday: "03",
+        title: "AutoCAD Electrical",
+        image: AutoEls,
+        description: "AutoCAD Electrical is a specialized version of AutoCAD tailored for electrical design. It provides powerful tools to create, modify, and document electrical control systems.",
+    },
+    {
+        id: 5,
+        day: "30",
+        parday: "03",
+        title: " AutoCad Civil",
+        image: autocadcivil,
+        description: "Civil 3D from Autodesk supports BIM for civil engineering design and documentation for rail, roads, land development, airports, water, and civil structures. Civil 3D helps professionals better understand project performance, maintain more consistent data and processes, and respond faster to changes.",
     },
 
     {
@@ -43,14 +64,7 @@ const courses = [
         image: Mas,
         description: "3DS Max is a professional 3D computer graphics program for making 3D animations, models, games, and images. It is often used in the video game industry for creating visual effects for movies and television, and for architectural visualization.",
     },
-    {
-        id: 5,
-        day: "30",
-        parday: "03",
-        title: "Civil 3D",
-        image: autocadcivil,
-        description: "Civil 3D from Autodesk supports BIM for civil engineering design and documentation for rail, roads, land development, airports, water, and civil structures. Civil 3D helps professionals better understand project performance, maintain more consistent data and processes, and respond faster to changes.",
-    },
+
 
 
     {
@@ -136,6 +150,23 @@ const courses = [
         image: photoshop,
         description: "Adobe Photoshop is a software application for image editing and photo retouching for use on Windows or MacOS computers. Photoshop offers users the ability to create, enhance, or otherwise edit images, artwork, and illustrations.",
     },
+    {
+        id: 21,
+        day: "30",
+        parday: "03",
+        title: "Lumion",
+        image: lumion1,
+        description: "Lumion is a powerful 3D rendering software that transforms architectural models into stunning visuals. With real-time rendering, it offers fast, realistic output, making it ideal for architects and designers.",
+    },
+    {
+        id: 22,
+        day: "30",
+        parday: "03",
+        title: "PLC",
+        image: Plc,
+        description: "PLC (Programmable Logic Controller) is an essential industrial control system used to automate machinery and processes. It ensures efficient and reliable control in manufacturing and engineering industries.",
+    },
+
 ];
 
 

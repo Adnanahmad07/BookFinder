@@ -4,6 +4,7 @@ import { useParams, Link } from 'react-router-dom';
 import Course from './Course';
 import { BiLeftArrowAlt, BiRightArrow } from 'react-icons/bi';
 import autocadmech from '../assets/autocadmech.jpg'
+import AutoEls from '../assets/AUTOCADELECTRICAL.jpeg'
 import SCADA from '../assets/scada.png'
 import SKETCHUP from "../assets/SKETCHUP.jpg"
 import Catia from '../assets/catiamodellingsoftware.jpg'
@@ -17,6 +18,9 @@ import vray from '../assets/vray.jpg'
 import Mas from '../assets/3dsmax.jpg'
 import photoshop from '../assets/photoshop.jpg'
 import revitmep from '../assets/RevitMEP.jpg'
+import lumion1 from '../assets/lumion1.jpg'
+import Plc from '../assets/plc.jpg'
+
 
 
 
@@ -139,7 +143,32 @@ const courses = [
         duration: "40",
         description: "Adobe Photoshop is a software application for image editing and photo retouching for use on Windows or MacOS computers.",
         details: "Adobe Photoshop is the industry-standard software for image editing and digital art. This course covers the essentials of photo editing, including cropping, retouching, and applying filters. You’ll also learn how to create and manipulate layers, adjust color, and add effects to images. Photoshop is an essential tool for graphic designers, photographers, and digital artists, offering endless creative possibilities.",
+    },
+    {
+        id: 2,
+        title: "AutoCAD Electrical",
+        image: AutoEls,
+        duration: "40",
+        description: "AutoCAD Electrical is a specialized version of AutoCAD tailored for electrical design. It provides powerful tools to create, modify, and document electrical control systems.",
+        details: "AutoCAD Electrical is a specialized version of AutoCAD tailored for electrical design. It provides powerful tools to create, modify, and document electrical control systems. With features like automated wire numbering, component tagging, and real-time error checking, AutoCAD Electrical streamlines the design process. The software supports PLC I/O drawings, panel layouts, and schematic diagrams, ensuring accuracy and reducing design time. Ideal for engineers and designers in the electrical field, it enhances productivity by integrating project management and comprehensive symbol libraries.",
+    },
+    {
+        id: 21,
+        title: "Lumion",
+        image: lumion1,
+        duration: "40",
+        description: "Lumion is a powerful 3D rendering software that transforms architectural models into stunning visuals. With real-time rendering, it offers fast, realistic output, making it ideal for architects and designers.",
+        details: "Lumion is a leading 3D rendering software used by architects, designers, and visualization professionals to bring their architectural models to life with photorealistic quality. Its intuitive interface and real-time rendering capabilities allow users to create high-quality images, videos, and virtual tours in minutes. With an extensive library of over 6,000 objects, materials, and lighting effects, Lumion enhances the realism of both exterior and interior designs. It supports a wide range of 3D modeling tools, ensuring smooth integration with programs like SketchUp, Revit, and AutoCAD. The ability to instantly update renders with design changes makes Lumion a go-to solution for those looking to quickly present dynamic, immersive environments to clients. Whether it’s for large-scale urban projects or intimate interior spaces, Lumion provides a visually engaging experience, perfect for architectural presentations and marketing.",
+    },
+    {
+        id: 22,
+        title: "PLC",
+        image: Plc,
+        duration: "40",
+        description: "PLC (Programmable Logic Controller) is an essential industrial control system used to automate machinery and processes. It ensures efficient and reliable control in manufacturing and engineering industries.",
+        details: "PLC, or Programmable Logic Controller, is a robust digital computer widely used in industrial automation to control machines and processes. Designed for real-time operation, PLCs execute complex functions such as timing, counting, logic operations, and sequential control. They are commonly applied in manufacturing lines, energy management, and building automation. A PLC monitors inputs from sensors and devices, processes the data, and triggers outputs to manage equipment like motors, lights, and valves. One of the key advantages of PLCs is their flexibility—they can be easily programmed and reprogrammed to accommodate changes in production or process requirements. They offer high reliability, durability, and easy integration into existing industrial systems. Ideal for engineers and technicians, learning PLC programming opens doors to various automation roles in industries like automotive, pharmaceuticals, and power generation, ensuring efficient and streamlined production processes.",
     }
+
 ];
 
 

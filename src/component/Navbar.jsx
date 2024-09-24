@@ -45,11 +45,13 @@ const Navbar = () => {
     // Categories and courses data for item2
     const categories = [
         {
-            name: 'Cvil Cad',
+            name: 'Civil Cad',
             courses: [
-                { name: 'AutoCAD', link: '/course/1' },
+                { name: 'AutoCAD 2D-3D', link: '/course/1' },
                 { name: 'Ravit Arch.', link: '/course/3' },
+                { name: 'SketchUp', link: '/course/9' },
                 { name: 'V-ray', link: '/course/19' },
+                { name: 'Lumion', link: '/course/21' },
                 { name: 'Photoshop', link: '/course/20' },
             ]
         },
@@ -67,8 +69,8 @@ const Navbar = () => {
         {
             name: 'Electrical Cad',
             courses: [
-                { name: 'AutoCAD', link: '/course/1' },
-                { name: 'SCANA', link: '/course/8' },
+                { name: 'AutoCAD Ele..', link: '/course/1' },
+                { name: 'PLC', link: '/course/22' },
                 { name: 'Revit MEP', link: '/course/17' },
                 { name: 'SCADA', link: '/course/8' }
             ]
@@ -78,7 +80,6 @@ const Navbar = () => {
             courses: [
                 { name: '3DS MAX', link: '/course/4' },
                 { name: 'SketchUp', link: '/course/9' },
-                { name: 'AutoCAD', link: '/course/1' },
                 { name: 'Revit Architecture', link: '/course/3' }
             ]
         }

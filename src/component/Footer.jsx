@@ -10,7 +10,8 @@ const Footer = () => {
 
                 <div className="mb-6 lg:mb-0">
                     <img src={logo} alt="Logo" className="h-12 mb-4 rounded-sm" />
-                    <p className="text-gray-400 xl:max-w-96">in front of govenment polytechnic college gate, gadge nagar, amravati 444602</p>
+                    <p className="text-gray-400 xl:max-w-96">In Front Of Government Polytechnic College Gate, Gadge Nagar, Amravati 444602</p>
+
                     <p className="mt-4">
                         <a href="tel:+918180834389" className="block text-gray-400s">Phone: +91 8180834389</a>
                         <a href="tel:+918087212653" className="block text-gray-400s">+91 8087212653</a>
@@ -26,6 +27,9 @@ const Footer = () => {
                         <li><Link to="/course/19" className="block text-gray-400 hover:text-white">V-ray</Link></li>
                         <li><Link to="/course/9" className="block text-gray-400 hover:text-white">SketchUp</Link></li>
                         <li><Link to="/course/3" className="block text-gray-400 hover:text-white">Revit Architecture</Link></li>
+                        <li><Link to="/course/10" className="block text-gray-400 hover:text-white">Catia</Link></li>
+                        <li><Link to="/course/14" className="block text-gray-400 hover:text-white">Solid Works</Link></li>
+                        <li><Link to="/course/11" className="block text-gray-400 hover:text-white">Creo</Link></li>
                     </ul>
                 </div>
 

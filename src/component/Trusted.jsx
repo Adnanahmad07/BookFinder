@@ -1,5 +1,7 @@
 import React from 'react'
 import AutoCAD from '../assets/AUTOCADELECTRICAL.jpeg'
+import autocad from '../assets/autocadcivil.jpg'
+
 import photoshop from '../assets/photoshop.jpg'
 import creo from '../assets/creo.jpg'
 import vray from '../assets/vray.jpg'
@@ -18,7 +20,7 @@ const topCourseData = [
     {
         Name: "AutoCAD Architecture",
         Details: "AutoCAD is a software application for 2D and 3D computer-aided design (CAD) and drafting. Available since 1982 as a desktop application and since 2010 as a mobile, web- and cloud-based app, AutoCAD is used across a wide range of industries, by architects, project managers, engineers, graphic designers, city planners, and other professionals.",
-        Imagesr: AutoCAD,
+        Imagesr: autocad,
         betch: "New"
 
 
