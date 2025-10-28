@@ -16,7 +16,7 @@ body {
 .backgroundImage {
   position: relative;
 
-  background-image: url('./assets/frontimage.jpg');
+
   background-position: top;
   background-repeat: no-repeat;
   height: 100vh;

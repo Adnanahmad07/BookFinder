@@ -1,7 +1,7 @@
 import { MenuIcon, X } from 'lucide-react';
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import logo from '../assets/logo.jpg';
+
 import { motion } from 'framer-motion';
 
 const Routs = [
@@ -10,18 +10,11 @@ const Routs = [
         NavLink: "/"
     },
     {
-        Name: "About us",
-        NavLink: "About"
-    },
-    {
-        Name: "Show Case",
-        NavLink: "Showcase"
-    },
-
-    {
-        Name: "Contact",
-        NavLink: "Contact"
+        Name: "Books",
+        NavLink: "/Books"
     }
+
+
 ];
 
 const NavLinkStyles = ({ isActive }) => {
@@ -43,47 +36,6 @@ const Navbar = () => {
     };
 
     // Categories and courses data for item2
-    const categories = [
-        {
-            name: 'Civil Cad',
-            courses: [
-                { name: 'AutoCAD 2D-3D', link: '/course/1' },
-                { name: 'Ravit Arch.', link: '/course/3' },
-                { name: 'SketchUp', link: '/course/9' },
-                { name: 'V-ray', link: '/course/19' },
-                { name: 'Lumion', link: '/course/21' },
-                { name: 'Photoshop', link: '/course/20' },
-            ]
-        },
-        {
-            name: 'Mechanical Cad',
-            courses: [
-                { name: 'Catia', link: '/course/10' },
-                { name: 'Creo', link: '/course/11' },
-                { name: 'Ansys WB', link: '/course/12' },
-                { name: 'SolidWorks', link: '/course/14' },
-                { name: 'NX CAD', link: '/course/15' },
-                { name: 'Revit MEP', link: '/course/17' },
-            ]
-        },
-        {
-            name: 'Electrical Cad',
-            courses: [
-                { name: 'AutoCAD Ele..', link: '/course/1' },
-                { name: 'PLC', link: '/course/22' },
-                { name: 'Revit MEP', link: '/course/17' },
-                { name: 'SCADA', link: '/course/8' }
-            ]
-        },
-        {
-            name: 'Interior Design',
-            courses: [
-                { name: '3DS MAX', link: '/course/4' },
-                { name: 'SketchUp', link: '/course/9' },
-                { name: 'Revit Architecture', link: '/course/3' }
-            ]
-        }
-    ];
 
     return (
         <>
@@ -92,14 +44,9 @@ const Navbar = () => {
                     initial={{ x: '100%' }}
                     animate={{ x: '0%' }}
                     transition={{ duration: 0.5, ease: 'easeInOut' }}
-                    className='md:hidden bg-red-50 dark:bg-gray-950 dark:text-neutral-300 h-full w-5/6 fixed z-20 pt-28'
+                    className='md:hidden bg-gray-200  dark:bg-gray-950 dark:text-neutral-300 h-full w-5/6 fixed z-20 pt-28'
                 >
-                    <div className='w-full flex justify-center items-center'>
-                        <Link
-                            to="/Course"
-                            className=' w-full text-center font-bold border-b border-gray-200 py-5'
-                        >Course Offered</Link>
-                    </div>
+
                     {Routs.map((item, index) => (
                         <div key={index} className='text-center font-bold border-b border-gray-200 py-5'>
                             <Link to={item.NavLink}>{item.Name}</Link>
@@ -112,7 +59,7 @@ const Navbar = () => {
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className='fixed top-0 z-20 w-full flex justify-between items-center mx-auto py-4 px-4 bg-red-50 dark:bg-custom-gradient-black xl:px-12'
+                className='fixed top-0 z-20 w-full flex justify-between items-center mx-auto py-4 px-4 bg-gradient-to-r from-slate-200 to-zinc-100  dark:bg-custom-gradient-black xl:px-12'
 
 
             >
@@ -144,11 +91,7 @@ const Navbar = () => {
                     </motion.button>
 
                     <Link to='/'>
-                        <img
-                            src={logo}
-                            alt="Logo"
-                            className='w-36 rounded-md'
-                        />
+                        <h2 className='text-black dark:text-gray-50 text-3xl font-extrabold tracking-wider font-serif '>BookFind</h2>
                     </Link>
                 </div>
 
@@ -172,53 +115,19 @@ const Navbar = () => {
                         onMouseLeave={() => setShowDropdown(false)} // Hide dropdown on mouse leave
 
                     >
-                        <NavLink
-                            className='text-gray-900 dark:text-neutral-200 font-semibold hover:text-red-500 transition duration-300 '
-                            to="/Course"
-                            style={NavLinkStyles}
 
 
-                        >  Course Offered</NavLink>
 
-                        {/* First dropdown (Categories) */}
-                        {showDropdown && (
-                            <div className="absolute top-full left-0 w-48 bg-white dark:bg-gray-900 shadow-lg z-10">
-                                {categories.map((category, index) => (
-                                    <div
-                                        key={index}
-                                        className="p-2 text-gray-900  hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-gray-700 cursor-pointer"
-                                        onMouseEnter={() => setActiveCategory(index)} // Show the second dropdown when hovering over a category
-                                    >
-                                        {category.name}
-                                    </div>
-                                ))}
-                            </div>
-                        )}
-
-                        {/* Second dropdown (Courses) */}
-                        {activeCategory !== null && showDropdown && (
-                            <div className="absolute top-full left-48 w-48 bg-white shadow-lg z-10">
-                                {categories[activeCategory].courses.map((course, courseIndex) => (
-                                    <Link
-                                        key={courseIndex}
-                                        to={course.link}
-                                        className="block p-2 text-gray-900 hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-gray-700"
-                                    >
-                                        {course.name}
-                                    </Link>
-                                ))}
-                            </div>
-                        )}
                     </div>
                 </div>
 
                 {/* Whatsapp Button */}
                 <div className='flex justify-center items-center gap-x-5'>
                     <button
-                        className='border px-6 py-2 mr-10 md:mr-16 xl:mr-12 rounded-sm border-gray-800 dark:border-neutral-50 dark:text-neutral-50 hover:bg-white hover:border-transparent dark:hover:text-black'
-                        onClick={() => window.open("https://wa.me/918087212653?text=I%20want%20to%20learn%20more%20about%20CadLinks%20Amravati", "_blank")}
+                        className=' px-6 py-2 mr-10 md:mr-16 xl:mr-12 rounded-sm border-gray-800 hover:cursor-default '
+
                     >
-                        Whatsapp
+
                     </button>
 
                 </div>

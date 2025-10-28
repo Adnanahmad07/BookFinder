@@ -3,14 +3,11 @@ import { Sun, Moon } from 'lucide-react';
 import './App.css'
 import Navbar from '../src/component/Navbar.jsx'
 import Footer from '../src/component/Footer.jsx'
-import Opanform from '../src/component/Opanform.jsx'
 import Home from '../src/Pages/Home.jsx'
-import Course from '../src/Pages/Course.jsx'
-import Showcase from '../src/Pages/Showcase.jsx'
-import CourseDetail from './Pages/CourseDetail.jsx';
-import About from '../src/Pages/About.jsx'
-import Contact from '../src/Pages/Contact.jsx'
-import Blog from '../src/Pages/Blog.jsx'
+import Books from '../src/Pages/Books.jsx'
+import BookDetails from './component/BookDetails.jsx';
+
+
 import { Routes, Route, useLocation } from 'react-router-dom'
 
 function App() {
@@ -30,15 +27,11 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/About' element={<About />} />
-        <Route path='/Showcase' element={<Showcase />} />
-        <Route path='/Course' element={<Course />} />
-        <Route path='/Course/:id' element={<CourseDetail />} />
-        <Route path='/Contact' element={<Contact />} />
-        <Route path='/Blog' element={<Blog />} />
+        <Route path='/Books' element={<Books />} />
+        <Route path="/book/:id" element={<BookDetails />} />
       </Routes>
       <Footer />
-      <Opanform />
+
 
       {/* dark mode */}
       <button
