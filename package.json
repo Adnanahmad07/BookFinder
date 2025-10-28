@@ -1,10 +1,10 @@
 {
-  "name": "BookFind",
-  "homepage": "https://BookFind.com/",
+  "name": "caddeskh",
+  "homepage": "https://cadlink.com/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "proxy": "https://BookFind.com",
+  "proxy": "https://27kisanagro.com",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

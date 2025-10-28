@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import { FaSearch } from "react-icons/fa";
 
 const Books = () => {
     const [query, setQuery] = useState("harry potter");
@@ -67,7 +68,7 @@ const Books = () => {
                 onSubmit={handleSearch}
                 className="flex justify-center mb-10 w-full"
             >
-                <div className="w-full max-w-lg border border-gray-300 bg-white dark:bg-gray-800 px-4 py-2 rounded-full flex justify-between items-center shadow-sm">
+                <div className=" w-full max-w-lg border border-gray-300 bg-white dark:bg-gray-800 px-4 py-2 rounded-full flex justify-between items-center shadow-sm ">
                     <input
                         type="text"
                         value={query}
@@ -82,10 +83,11 @@ const Books = () => {
               text-gray-800 hover:from-gray-300 hover:to-gray-400 
               dark:from-gray-700 dark:to-gray-800 dark:text-gray-100 
               dark:hover:from-gray-600 dark:hover:to-gray-700 
-              transition-all duration-300 shadow-md"
+              transition-all duration-300 shadow-md hidden md:block"
                     >
                         Search
                     </button>
+                    <button className="md:hidden block"><FaSearch /></button>
                 </div>
             </form>
 
